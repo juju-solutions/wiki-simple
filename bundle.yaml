@@ -10,12 +10,12 @@ services:
       "gui-x": 609
       "gui-y": -15
   mysql: 
-    charm: "cs:trusty/mysql-36"
+    charm: "cs:trusty/mysql-52"
     num_units: 1
     options: 
       "binlog-format": MIXED
       "block-size": 5
-      "dataset-size": "80%"
+      "dataset-size": "512M"
       flavor: distro
       "ha-bindiface": eth0
       "ha-mcastport": 5411
